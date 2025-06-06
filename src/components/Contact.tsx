@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -39,27 +39,34 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'dheeraj.kumar@email.com',
-      href: 'mailto:dheeraj.kumar@email.com'
+      value: 'dheerusharma4321@gamil.com',
+      href: 'mailto:dheerusharma4321@gamil.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+91 7982045453',
+      href: 'tel:+917982045453'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Rewari, Haryana, India',
       href: '#'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' }
+    { 
+      icon: Github, 
+      href: 'https://github.com/Dheeraj5604', 
+      label: 'GitHub' 
+    },
+    { 
+      icon: Linkedin, 
+      href: 'https://www.linkedin.com/in/dheeraj-kumar-a789b7254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 
+      label: 'LinkedIn' 
+    }
   ];
 
   return (

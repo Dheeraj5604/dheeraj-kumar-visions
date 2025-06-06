@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="mb-8 relative group">
             <div className="w-48 h-48 mx-auto relative">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                src="/lovable-uploads/b39a94db-69cf-4a30-8840-e26e55f02edf.png"
                 alt="Dheeraj Kumar"
                 className="w-full h-full rounded-full object-cover border-4 border-primary/50 transition-all duration-500 group-hover:scale-105 group-hover:rotate-3"
               />
@@ -79,8 +79,8 @@ const Hero = () => {
           </div>
 
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Crafting digital experiences with passion and precision. I transform ideas into elegant, 
-            functional solutions that make a difference.
+            A passionate Computer Science student at VIT Vellore, ready to transform ideas into elegant, 
+            functional solutions. Eager to contribute to the corporate world with fresh perspectives.
           </p>
 
           {/* CTA Buttons */}
