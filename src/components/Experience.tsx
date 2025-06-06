@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar, MapPin, GraduationCap, Building } from 'lucide-react';
 
@@ -20,7 +19,7 @@ const Experience = () => {
     },
     {
       title: 'Senior Secondary Education',
-      company: 'Arya Public School',
+      company: 'Canal Valley Public School',
       location: 'Rewari, Haryana',
       period: '2020 - 2022 (March 2022)',
       description: 'Completed senior secondary education with strong foundation in Mathematics and Science, preparing for engineering entrance examinations.',
