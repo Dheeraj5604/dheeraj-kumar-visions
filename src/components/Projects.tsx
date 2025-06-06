@@ -8,71 +8,48 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include real-time inventory, payment integration, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      category: 'fullstack',
-      github: '#',
+      title: 'Water Potability Detector',
+      description: 'XGBoost and Python Streamlit model to predict water potability using sensor data. Improved classification accuracy and implemented data visualization techniques for better insights.',
+      image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&h=400&fit=crop',
+      technologies: ['XGBoost', 'Python', 'Streamlit', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
+      category: 'ml',
+      github: 'https://github.com/Dheeraj5604',
       live: '#'
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      technologies: ['React', 'TypeScript', 'Socket.io', 'MongoDB'],
-      category: 'frontend',
-      github: '#',
+      title: 'Doctor Appointment Chatbot',
+      description: 'AWS Lex chatbot with Lambda and DynamoDB integration. Features automated booking, rescheduling, and appointment notifications with real-time SMS updates.',
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
+      technologies: ['AWS Lex', 'AWS Lambda', 'Amazon DynamoDB', 'AWS S3', 'Amazon Cognito'],
+      category: 'cloud',
+      github: 'https://github.com/Dheeraj5604',
       live: '#'
     },
     {
       id: 3,
-      title: 'Weather Analytics Dashboard',
-      description: 'A comprehensive weather analytics dashboard with interactive charts, historical data, and predictive modeling capabilities.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['React', 'D3.js', 'Python', 'FastAPI'],
-      category: 'frontend',
-      github: '#',
-      live: '#'
-    },
-    {
-      id: 4,
-      title: 'API Gateway Service',
-      description: 'A microservices API gateway with authentication, rate limiting, and comprehensive logging. Built for scalability and performance.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
-      technologies: ['Node.js', 'Redis', 'Docker', 'Kubernetes'],
-      category: 'backend',
-      github: '#',
-      live: '#'
-    },
-    {
-      id: 5,
-      title: 'Mobile Banking App',
-      description: 'A secure mobile banking application with biometric authentication, transaction history, and real-time notifications.',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop',
-      technologies: ['React Native', 'Node.js', 'PostgreSQL', 'JWT'],
-      category: 'mobile',
-      github: '#',
-      live: '#'
-    },
-    {
-      id: 6,
-      title: 'AI Content Generator',
-      description: 'An AI-powered content generation platform that helps create blog posts, social media content, and marketing copy.',
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop',
-      technologies: ['Python', 'OpenAI API', 'FastAPI', 'React'],
-      category: 'fullstack',
-      github: '#',
+      title: 'Smart Cafe Recommendation System',
+      description: 'Real-time cafe recommendation system using React.js, Express.js, and SQL. Features authentication, interactive maps, and personalized recommendations.',
+      image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=400&fit=crop',
+      technologies: ['React.js', 'Express.js', 'SQL', 'Node.js'],
+      category: 'web',
+      github: 'https://github.com/Dheeraj5604',
       live: '#'
     }
   ];
 
-  const categories = ['all', 'frontend', 'backend', 'fullstack', 'mobile'];
+  const categories = ['all', 'ml', 'cloud', 'web'];
   
   const filteredProjects = filter === 'all' 
     ? projects 
     : projects.filter(project => project.category === filter);
+
+  const categoryLabels = {
+    all: 'All Projects',
+    ml: 'Machine Learning',
+    cloud: 'Cloud Computing',
+    web: 'Web Development'
+  };
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
@@ -88,13 +65,13 @@ const Projects = () => {
               <button
                 key={category}
                 onClick={() => setFilter(category)}
-                className={`px-6 py-3 rounded-full transition-all duration-300 capitalize ${
+                className={`px-6 py-3 rounded-full transition-all duration-300 ${
                   filter === category
                     ? 'bg-primary text-primary-foreground shadow-lg'
                     : 'bg-background text-muted-foreground hover:text-foreground hover:shadow-md'
                 }`}
               >
-                {category}
+                {categoryLabels[category as keyof typeof categoryLabels]}
               </button>
             ))}
           </div>

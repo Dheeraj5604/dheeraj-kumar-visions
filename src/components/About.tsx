@@ -6,23 +6,23 @@ const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable code that stands the test of time"
+      title: "Problem Solving",
+      description: "Strong analytical skills with expertise in Python and data structures"
     },
     {
       icon: Palette,
-      title: "Design Focus",
-      description: "Creating beautiful interfaces that users love to interact with"
+      title: "Creative Mind",
+      description: "Innovative approach to developing user-friendly applications"
     },
     {
       icon: Zap,
-      title: "Performance",
-      description: "Optimizing every pixel and byte for lightning-fast experiences"
+      title: "Quick Learner",
+      description: "Rapidly adapting to new technologies and frameworks"
     },
     {
       icon: Heart,
-      title: "User-Centric",
-      description: "Putting user needs at the center of every decision"
+      title: "Team Player",
+      description: "Excellent collaboration and communication skills in team environments"
     }
   ];
 
@@ -37,22 +37,23 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Hello! I'm Dheeraj Kumar, a passionate developer who loves turning complex problems 
-                into simple, beautiful, and intuitive solutions. With over 5 years of experience in 
-                web development, I've had the privilege of working with amazing teams and clients 
-                across various industries.
+                Hello! I'm Dheeraj Kumar, a passionate Information Technology student at VIT Vellore 
+                with a strong foundation in Python programming and web development. I love transforming 
+                complex problems into elegant, efficient solutions through code.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My journey began with curiosity about how websites work, and it has evolved into a 
-                deep passion for creating digital experiences that not only look great but also 
-                perform exceptionally well. I believe that great design and clean code go hand in hand.
+                My journey in technology began with curiosity about how software works, and it has 
+                evolved into a deep passion for machine learning, cloud computing, and full-stack 
+                development. I believe in continuous learning and applying theoretical knowledge 
+                to real-world projects.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge with the developer community. I'm always 
-                eager to take on new challenges and collaborate on exciting projects.
+                As a fresher entering the corporate world, I bring fresh perspectives, enthusiasm 
+                for innovation, and a strong desire to contribute meaningfully to technology teams. 
+                I'm excited to apply my skills in Python, AWS, and web technologies to create 
+                impactful solutions.
               </p>
             </div>
 

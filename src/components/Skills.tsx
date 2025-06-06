@@ -2,40 +2,52 @@
 import React, { useState } from 'react';
 
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState('frontend');
+  const [activeCategory, setActiveCategory] = useState('languages');
 
   const skillCategories = {
-    frontend: {
-      title: 'Frontend Development',
+    languages: {
+      title: 'Programming Languages',
       skills: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Next.js', level: 88 },
-        { name: 'Tailwind CSS', level: 92 },
-        { name: 'JavaScript', level: 94 },
-        { name: 'HTML/CSS', level: 96 }
+        { name: 'Python', level: 90 },
+        { name: 'C/C++', level: 85 },
+        { name: 'HTML', level: 92 },
+        { name: 'CSS', level: 88 },
+        { name: 'JavaScript', level: 85 },
+        { name: 'Java', level: 80 },
+        { name: 'SQL', level: 85 }
       ]
     },
-    backend: {
-      title: 'Backend Development',
+    frameworks: {
+      title: 'Frameworks & Libraries',
       skills: [
-        { name: 'Node.js', level: 87 },
-        { name: 'Python', level: 82 },
-        { name: 'PostgreSQL', level: 85 },
-        { name: 'MongoDB', level: 80 },
-        { name: 'REST APIs', level: 90 },
-        { name: 'GraphQL', level: 75 }
+        { name: 'React', level: 85 },
+        { name: 'Node.js', level: 80 },
+        { name: 'Pandas', level: 88 },
+        { name: 'NumPy', level: 85 },
+        { name: 'Matplotlib', level: 82 },
+        { name: 'Seaborn', level: 80 }
       ]
     },
     tools: {
-      title: 'Tools & Technologies',
+      title: 'Platforms & Tools',
       skills: [
-        { name: 'Git/GitHub', level: 93 },
-        { name: 'Docker', level: 78 },
-        { name: 'AWS', level: 72 },
-        { name: 'Figma', level: 85 },
+        { name: 'Git', level: 85 },
+        { name: 'GitHub', level: 90 },
         { name: 'VS Code', level: 95 },
-        { name: 'Webpack', level: 80 }
+        { name: 'XGBoost', level: 75 },
+        { name: 'AWS Lambda', level: 70 },
+        { name: 'DynamoDB', level: 72 }
+      ]
+    },
+    soft: {
+      title: 'Soft Skills',
+      skills: [
+        { name: 'Communication', level: 90 },
+        { name: 'Leadership', level: 85 },
+        { name: 'Teamwork', level: 92 },
+        { name: 'Creative Mind', level: 88 },
+        { name: 'Attention to Detail', level: 90 },
+        { name: 'Critical Thinking', level: 87 }
       ]
     }
   };
@@ -49,13 +61,13 @@ const Skills = () => {
           </h2>
 
           {/* Category Tabs */}
-          <div className="flex justify-center mb-12">
-            <div className="bg-muted rounded-full p-1 flex">
+          <div className="flex justify-center mb-12 overflow-x-auto">
+            <div className="bg-muted rounded-full p-1 flex flex-nowrap min-w-max">
               {Object.entries(skillCategories).map(([key, category]) => (
                 <button
                   key={key}
                   onClick={() => setActiveCategory(key)}
-                  className={`px-6 py-3 rounded-full transition-all duration-300 ${
+                  className={`px-4 py-3 rounded-full transition-all duration-300 text-sm whitespace-nowrap ${
                     activeCategory === key
                       ? 'bg-primary text-primary-foreground shadow-lg'
                       : 'text-muted-foreground hover:text-foreground'

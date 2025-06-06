@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const roles = ['Full Stack Developer', 'UI/UX Designer', 'Software Engineer', 'Problem Solver'];
+  const roles = ['Python Developer', 'Web Developer', 'Software Engineer', 'Problem Solver'];
 
   useEffect(() => {
     const currentRole = roles[currentIndex];
@@ -79,8 +79,9 @@ const Hero = () => {
           </div>
 
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            A passionate Computer Science student at VIT Vellore, ready to transform ideas into elegant, 
-            functional solutions. Eager to contribute to the corporate world with fresh perspectives.
+            Bachelor of Technology in Information Technology student at VIT Vellore, 
+            passionate about Python development and web technologies. Ready to contribute 
+            innovative solutions in the corporate world.
           </p>
 
           {/* CTA Buttons */}

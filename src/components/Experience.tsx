@@ -1,47 +1,64 @@
 
 import React from 'react';
-import { Calendar, MapPin, GraduationCap } from 'lucide-react';
+import { Calendar, MapPin, GraduationCap, Building } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Computer Science Student',
+      title: 'B.Tech in Information Technology',
       company: 'Vellore Institute of Technology (VIT)',
       location: 'Vellore, Tamil Nadu',
-      period: '2022 - Present',
-      description: 'Currently pursuing Bachelor of Technology in Computer Science and Engineering. Actively learning modern web technologies and building projects to enhance practical skills.',
+      period: '2022 - Present (Expected May 2026)',
+      description: 'Currently pursuing Bachelor of Technology in Information Technology with focus on modern programming languages, data structures, and software development.',
       achievements: [
         'Maintaining excellent academic performance',
-        'Building full-stack web applications using React and Node.js',
-        'Participating in coding competitions and hackathons',
-        'Contributing to open-source projects on GitHub'
-      ]
+        'Specialized in Python programming and web development',
+        'Working on machine learning and cloud computing projects',
+        'Active participation in coding competitions and technical events'
+      ],
+      type: 'education'
     },
     {
-      title: 'Aspiring Full Stack Developer',
-      company: 'Personal Projects & Learning',
+      title: 'Senior Secondary Education',
+      company: 'Arya Public School',
       location: 'Rewari, Haryana',
-      period: '2023 - Present',
-      description: 'Self-motivated learning journey focused on modern web development technologies. Building portfolio projects and gaining hands-on experience in full-stack development.',
-      achievements: [
-        'Completed multiple web development projects',
-        'Learned React, TypeScript, and modern CSS frameworks',
-        'Practiced responsive design and user experience principles',
-        'Exploring backend technologies like Node.js and databases'
-      ]
-    },
-    {
-      title: 'High School Graduate',
-      company: 'Secondary Education',
-      location: 'Rewari, Haryana',
-      period: '2020 - 2022',
-      description: 'Completed higher secondary education with a focus on science and mathematics. Developed strong analytical and problem-solving skills that form the foundation for programming.',
+      period: '2020 - 2022 (March 2022)',
+      description: 'Completed senior secondary education with strong foundation in Mathematics and Science, preparing for engineering entrance examinations.',
       achievements: [
         'Achieved excellent grades in Mathematics and Science',
-        'Developed logical thinking and problem-solving abilities',
+        'Developed analytical and problem-solving skills',
         'First exposure to computer programming concepts',
-        'Prepared for engineering entrance examinations'
-      ]
+        'Qualified for engineering entrance examinations'
+      ],
+      type: 'education'
+    },
+    {
+      title: 'Intern',
+      company: 'Technology and Gaming Club',
+      location: 'VIT Vellore',
+      period: '2023 - Present',
+      description: 'Working as an intern gaining hands-on experience in technology projects and collaborative development in a dynamic environment.',
+      achievements: [
+        'Organized and managed events in Gravitas tech fest',
+        'Enhanced leadership skills through team collaboration',
+        'Improved technical communication and project management',
+        'Contributed to various technical initiatives and workshops'
+      ],
+      type: 'work'
+    },
+    {
+      title: 'Intern',
+      company: 'Industry 4.0 Enabling Technologies',
+      location: 'Remote',
+      period: '2023',
+      description: 'Completed comprehensive training on machine learning and developed practical projects in water potability detection and data analysis.',
+      achievements: [
+        'Completed training on machine learning and various models',
+        'Developed water potability detection project using Python',
+        'Gained experience in data preprocessing and model optimization',
+        'Applied machine learning concepts to real-world problems'
+      ],
+      type: 'work'
     }
   ];
 
@@ -50,7 +67,7 @@ const Experience = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            My Journey
+            Education & Experience
           </h2>
 
           <div className="relative">
@@ -86,7 +103,7 @@ const Experience = () => {
                   
                   <div className="flex items-center gap-4 text-muted-foreground mb-3">
                     <div className="flex items-center gap-1">
-                      <GraduationCap size={14} />
+                      {exp.type === 'education' ? <GraduationCap size={14} /> : <Building size={14} />}
                       <span className="font-medium">{exp.company}</span>
                     </div>
                     <div className="flex items-center gap-1">
