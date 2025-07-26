@@ -11,9 +11,9 @@ const Experience = () => {
       description: 'Currently pursuing Bachelor of Technology in Information Technology with focus on modern programming languages, data structures, and software development.',
       achievements: [
         'Maintaining excellent academic performance',
-        'Specialized in Python programming and web development',
-        'Working on machine learning and cloud computing projects',
-        'Active participation in coding competitions and technical events'
+        'Specialized in cpp programming and web dev',
+        'Working on machine learning and web projects',
+        'Active participation in coding competitions'
       ],
       type: 'education'
     },
@@ -33,23 +33,23 @@ const Experience = () => {
     },
     {
       title: 'Intern',
-      company: 'Technology and Gaming Club',
-      location: 'VIT Vellore',
-      period: '2023 - Present',
+      company: 'LabMentix.EduTech.Pvt.Ltd',
+      location: 'Work from Home',
+      period: ' 15 June 2025 - Present',
       description: 'Working as an intern gaining hands-on experience in technology projects and collaborative development in a dynamic environment.',
       achievements: [
-        'Organized and managed events in Gravitas tech fest',
-        'Enhanced leadership skills through team collaboration',
-        'Improved technical communication and project management',
-        'Contributed to various technical initiatives and workshops'
+        'Developed skills in collaborative Web development',
+        'Enhanced leadership skills through team collab',
+        'Improve communication and project management',
+        'Build Projects using React.js, Node.js, and SQL'
       ],
       type: 'work'
     },
     {
       title: 'Intern',
-      company: 'Industry 4.0 Enabling Technologies',
+      company: 'Dhenu Dharma Foundation',
       location: 'Remote',
-      period: '2023',
+      period: '1st may 2025 - 30 may 2025',
       description: 'Completed comprehensive training on machine learning and developed practical projects in water potability detection and data analysis.',
       achievements: [
         'Completed training on machine learning and various models',
