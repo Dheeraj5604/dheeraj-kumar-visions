@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const roles = ['Python Developer', 'Web Developer', 'Software Engineer', 'Problem Solver'];
+  const roles = ['C++ Developer', 'Web Developer', 'Software Engineer', 'Problem Solver'];
 
   useEffect(() => {
     const currentRole = roles[currentIndex];

@@ -35,7 +35,7 @@ const Experience = () => {
       title: 'Intern',
       company: 'LabMentix.EduTech.Pvt.Ltd',
       location: 'Work from Home',
-      period: ' 15 June 2025 - Present',
+      period: ' 15 June 2025 - 15 August 2025',
       description: 'Working as an intern gaining hands-on experience in technology projects and collaborative development in a dynamic environment.',
       achievements: [
         'Developed skills in collaborative Web development',
